@@ -1,11 +1,11 @@
-const logotext = "Yuzhuo Jia";
+const logotext = "Keye Yu";
 const meta = {
-  title: "Yuzhuo Jia",
-  description: "I'm Yuzhuo Jia",
+  title: "Keye Yu",
+  description: "I'm Keye Yu",
 };
 
 const introdata = {
-  title: "Yuzhuo Jia",
+  title: "Keye Yu",
   //   animated: {
   //     first: "[]",
   //     second: "[]",
