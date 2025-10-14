@@ -60,7 +60,7 @@ export const About = () => {
           </Col>
         </Row>
         <Row className="sec_sp">
-          <Col lang="5">
+          <Col lg="5">
             <h3 className="color_sec py-4">Research Experience</h3>
           </Col>
           <Col lg="7">
@@ -75,8 +75,8 @@ export const About = () => {
             })}
           </Col>
         </Row>
-        {/* <Row className="sec_sp">
-          <Col lang="5">
+        <Row className="sec_sp">
+          <Col lg="5">
             <h3 className="color_sec py-4">Work Experience</h3>
           </Col>
           <Col lg="7">
@@ -90,9 +90,9 @@ export const About = () => {
               );
             })}
           </Col>
-        </Row> */}
+        </Row>
         {/* <Row className="sec_sp">
-          <Col lang="5">
+          <Col lg="5">
             <h3 className="color_sec py-4">Organizations</h3>
           </Col>
           <Col lg="7">
@@ -108,7 +108,7 @@ export const About = () => {
           </Col>
         </Row> */}
         {/* <Row className="sec_sp">
-          <Col lang="5">
+          <Col lg="5">
             <h3 className="color_sec py-4">Awards & Grants</h3>
           </Col>
           <Col lg="7">

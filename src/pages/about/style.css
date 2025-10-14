@@ -2,6 +2,25 @@
     margin-bottom: calc(3rem + 5.128vw)
 }
 
+/* Force all text in About page to be black */
+.About-header p,
+.About-header .service_desc,
+.About-header div,
+.About-header span {
+    color: #000 !important;
+}
+
+/* Keep only headings with color_sec class blue, force all other text black */
+.About-header .service__title {
+    color: #000 !important;
+}
+
+/* Force table content to be black */
+.About-header .table td,
+.About-header .table th {
+    color: #000 !important;
+}
+
 .table td,
 .table th {
     color: var(--text-color);

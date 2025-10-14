@@ -89,6 +89,16 @@ const awards = [
 ];
 
 const workexperience = [
+  {
+    title: "Aaaa Position",
+    period: "Aaaa - Aaaa",
+    description: "Aaaa description for work experience. This is placeholder content that will be replaced with actual work experience details."
+  },
+  {
+    title: "Aaaa Role",
+    period: "Aaaa - Aaaa",
+    description: "Aaaa description for another work experience. This is also placeholder content for demonstration purposes."
+  },
   // {
   //   title: "[Motional] Robotics Research Engineer",
   //   period: "Sep 2022 - Dec 2022",
