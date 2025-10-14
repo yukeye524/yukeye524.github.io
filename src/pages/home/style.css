@@ -17,7 +17,11 @@ section {
     text-align: center;
 }
 a{
-  color:  royalblue;
+  color: var(--secondary-color) !important;
+}
+
+.intro a {
+  color: var(--secondary-color) !important;
 }
 body {
     background-image: url("../../assets/images/blob.svg");
@@ -49,7 +53,7 @@ body {
 }
 
 .btn-about a {
-    color: royalblue;
+    color: var(--secondary-color) !important;
     text-decoration: none;
 }
 
@@ -74,6 +78,11 @@ body {
 .mb-1x{
     font-weight: 500;
     margin-top: 5px;
+    color: #000 !important;
+}
+
+.intro p {
+    color: #000 !important;
 }
 img {
     max-width: 100%;

@@ -6,10 +6,17 @@
     -moz-column-gap: 4rem;
     -webkit-column-gap: 4rem;
 }
-.img_research{
+.researchBox .img_research{
     border-radius: 0%;
     width:300px;
     height:100%;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.researchBox .img_research:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
 }
 
 .po_item {
@@ -88,11 +95,26 @@
     text-decoration: none;
 }
 
-.d {
-  color: blue;
+.researchBox .d {
+  color: var(--text-color);
   text-decoration: none;
 }
 
-.d:hover {
+.researchBox .d:hover {
   text-decoration: underline;
+}
+
+.researchBox .description p {
+  color: var(--text-color);
+}
+
+.project-title-link {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-title-link:hover {
+  color: var(--primary-color);
+  text-decoration: none;
 }

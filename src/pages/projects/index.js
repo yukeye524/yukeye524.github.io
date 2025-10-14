@@ -2,6 +2,7 @@ import "./style.css";
 
 import { Col, Container, Row } from "react-bootstrap";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import { meta, projectportfolio } from "../../content_option";
 
 
@@ -15,7 +16,12 @@ const imgMap = {
   paper: paper,
   interview: interview,
   dcd: dcd,
+};
 
+const projectRoutes = {
+  paper: "/projects/paper-review-assistant",
+  interview: "/projects/interview-assistant",
+  dcd: "/projects/dcd-ar-training",
 };
 
 export const Projects = () => {
@@ -39,10 +45,16 @@ export const Projects = () => {
             return (
               <div key={i} className="researchBox">
                 <div>
-                  <img className="img_research" src={imgMap[data.img]} alt={data.title}></img>
+                  <Link to={projectRoutes[data.img]}>
+                    <img className="img_research" src={imgMap[data.img]} alt={data.title}></img>
+                  </Link>
                 </div>
                 <div className="description">
-                  <h5>{data.title}</h5>
+                  <h5>
+                    <Link to={projectRoutes[data.img]} className="project-title-link">
+                      {data.title}
+                    </Link>
+                  </h5>
                   <div>
                     <p>{data.description}</p>
                     {[

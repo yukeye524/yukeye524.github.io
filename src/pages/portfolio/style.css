@@ -86,3 +86,12 @@
 .po_item .content a:hover {
     text-decoration: none;
 }
+
+.d {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.d:hover {
+  text-decoration: underline;
+}

@@ -18,6 +18,16 @@
     --overlay-color: rgb(255 255 255 / 70%);
 }
 
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --primary-color: #2d2d2d;
+    --secondary-color: #318CE7;
+    --text-color: #ffffff;
+    --text-color-2: #87CEEB;
+    --text-color-3: #318CE7;
+    --overlay-color: rgb(0 0 0 / 70%);
+}
+
 html,
 body {
     height: 100%;
