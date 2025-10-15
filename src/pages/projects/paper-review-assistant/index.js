@@ -67,7 +67,7 @@ export const PaperReviewAssistant = () => {
                 <img
                   src="https://framerusercontent.com/images/dx16ZAvCzcHEmWx57EgXXifCiE.png?width=1286&height=1174"
                   alt="Feature demonstration"
-                  className="img-fluid rounded project-image clickable-image"
+                  className="img-fluid rounded project-image full-content clickable-image"
                   onClick={() => openImageModal("https://framerusercontent.com/images/dx16ZAvCzcHEmWx57EgXXifCiE.png?width=1286&height=1174", "Feature demonstration")}
                 />
               </div>

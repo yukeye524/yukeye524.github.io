@@ -55,6 +55,11 @@
   object-fit: cover;
 }
 
+.project-image.full-content {
+  object-fit: contain;
+  max-height: 500px;
+}
+
 .project-image:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
