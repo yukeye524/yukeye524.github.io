@@ -29,7 +29,7 @@ export const Projects = () => {
 
   return (
     <HelmetProvider>
-      <Container className="About-header">
+      <Container className="About-header" style={{maxWidth: '1100px'}}>
         <Helmet>
           <meta charSet="utf-8" />
           <title> Projects | {meta.title} </title>{" "}
@@ -41,7 +41,7 @@ export const Projects = () => {
           </Col>
         </Row>
         <div className="">
-          {projectportfolio.map((data, i) => {
+                  {projectportfolio.map((data, i) => {
             return (
               <div key={i} className="researchBox">
                 <div>

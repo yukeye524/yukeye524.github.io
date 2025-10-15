@@ -4,9 +4,18 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { meta } from "../../../content_option";
 
-import React from "react";
+import React, { useState } from "react";
 
 export const DCDARTraining = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openImageModal = (imageSrc, imageAlt) => {
+    setSelectedImage({ src: imageSrc, alt: imageAlt });
+  };
+
+  const closeImageModal = () => {
+    setSelectedImage(null);
+  };
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -23,16 +32,21 @@ export const DCDARTraining = () => {
         </Row>
         <div className="project-content">
           <div className="project-section">
-            <div className="image-text-section">
-              <div className="image-container">
+            <div className="project-overview-section">
+              <Row className="mb-5">
+                <Col lg="12">
+                  <h3>Project Overview</h3>
+                </Col>
+              </Row>
+              <div className="overview-image-container">
                 <img
                   src="https://framerusercontent.com/images/uwXqfI2rLhnB8FXU9x7j1nCdSw.png?scale-down-to=4096&width=4324&height=6072"
                   alt="Brand Identity Design"
-                  className="img-fluid rounded project-image"
+                  className="img-fluid rounded project-image clickable-image"
+                  onClick={() => openImageModal("https://framerusercontent.com/images/uwXqfI2rLhnB8FXU9x7j1nCdSw.png?scale-down-to=4096&width=4324&height=6072", "Brand Identity Design")}
                 />
               </div>
-              <div className="text-container">
-                <h3>Project Overview</h3>
+              <div className="overview-text-container">
                 <p>
                   As the branding and visual designer for Diaper Stork, I led the creation of the full brand identity from concept through implementation. My work involved building the visual system (logo, color, typography), enforcing WCAG accessibility standards, and driving the adoption of a modular design system across all touchpoints. This effort was validated by early user testing, which showed a <span className="highlight-text">92% approval rate</span> for the new brand direction.
                 </p>
@@ -51,7 +65,8 @@ export const DCDARTraining = () => {
                 <img
                   src="https://framerusercontent.com/images/oYoMFOnArOgSn0plDx3PIalfU.png?width=1600&height=1333"
                   alt="Market Research"
-                  className="img-fluid rounded project-image"
+                  className="img-fluid rounded project-image clickable-image"
+                  onClick={() => openImageModal("https://framerusercontent.com/images/oYoMFOnArOgSn0plDx3PIalfU.png?width=1600&height=1333", "Market Research")}
                 />
               </div>
               <div className="text-container">
@@ -67,7 +82,8 @@ export const DCDARTraining = () => {
                 <img
                   src="https://framerusercontent.com/images/Fe5ZGdmGeklD91w8fL8Ni6xqns.png?scale-down-to=2048&width=2332&height=754"
                   alt="Emotive Palette"
-                  className="img-fluid rounded project-image"
+                  className="img-fluid rounded project-image clickable-image"
+                  onClick={() => openImageModal("https://framerusercontent.com/images/Fe5ZGdmGeklD91w8fL8Ni6xqns.png?scale-down-to=2048&width=2332&height=754", "Emotive Palette")}
                 />
               </div>
               <div className="text-container">
@@ -84,7 +100,8 @@ export const DCDARTraining = () => {
                 <img
                   src="https://framerusercontent.com/images/oYoMFOnArOgSn0plDx3PIalfU.png?width=1600&height=1333"
                   alt="Logo Sketching Process"
-                  className="img-fluid rounded project-image"
+                  className="img-fluid rounded project-image clickable-image"
+                  onClick={() => openImageModal("https://framerusercontent.com/images/oYoMFOnArOgSn0plDx3PIalfU.png?width=1600&height=1333", "Logo Sketching Process")}
                 />
               </div>
               <div className="text-container">
@@ -100,7 +117,8 @@ export const DCDARTraining = () => {
                 <img
                   src="https://framerusercontent.com/images/fojag5IXTWnkBzHAt7aKicSGIoo.png?width=1778&height=1526"
                   alt="Logo Creation Process"
-                  className="img-fluid rounded project-image"
+                  className="img-fluid rounded project-image clickable-image"
+                  onClick={() => openImageModal("https://framerusercontent.com/images/fojag5IXTWnkBzHAt7aKicSGIoo.png?width=1778&height=1526", "Logo Creation Process")}
                 />
               </div>
               <div className="text-container">
@@ -117,7 +135,8 @@ export const DCDARTraining = () => {
                 <img
                   src="https://framerusercontent.com/images/oYoMFOnArOgSn0plDx3PIalfU.png?width=1600&height=1333"
                   alt="Typography System"
-                  className="img-fluid rounded project-image"
+                  className="img-fluid rounded project-image clickable-image"
+                  onClick={() => openImageModal("https://framerusercontent.com/images/oYoMFOnArOgSn0plDx3PIalfU.png?width=1600&height=1333", "Typography System")}
                 />
               </div>
               <div className="text-container">
@@ -133,7 +152,8 @@ export const DCDARTraining = () => {
                 <img
                   src="https://framerusercontent.com/images/qW9CbMSgIgAEDez8eYBlHpaBFM.png?width=1940&height=1150"
                   alt="Color System"
-                  className="img-fluid rounded project-image"
+                  className="img-fluid rounded project-image clickable-image"
+                  onClick={() => openImageModal("https://framerusercontent.com/images/qW9CbMSgIgAEDez8eYBlHpaBFM.png?width=1940&height=1150", "Color System")}
                 />
               </div>
               <div className="text-container">
@@ -150,7 +170,8 @@ export const DCDARTraining = () => {
                 <img
                   src="https://framerusercontent.com/images/CTOOKsvddsnuRk4RbJg3JuWXUPA.png?width=1226&height=1498"
                   alt="Brand Applications"
-                  className="img-fluid rounded project-image"
+                  className="img-fluid rounded project-image clickable-image"
+                  onClick={() => openImageModal("https://framerusercontent.com/images/CTOOKsvddsnuRk4RbJg3JuWXUPA.png?width=1226&height=1498", "Brand Applications")}
                 />
               </div>
               <div className="text-container">
@@ -162,6 +183,25 @@ export const DCDARTraining = () => {
 
         </div>
       </Container>
+
+      {/* 图片模态框 */}
+      {selectedImage && (
+        <div className="image-modal-overlay" onClick={closeImageModal}>
+          <div className="image-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="image-modal-close" onClick={closeImageModal}>
+              ×
+            </button>
+            <img
+              src={selectedImage.src}
+              alt={selectedImage.alt}
+              className="image-modal-img"
+            />
+            <div className="image-modal-caption">
+              {selectedImage.alt}
+            </div>
+          </div>
+        </div>
+      )}
     </HelmetProvider>
   );
 };

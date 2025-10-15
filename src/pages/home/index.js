@@ -55,7 +55,10 @@ export const Home = () => {
                 <p className="mb-1x">
                   {" "}
                   Hello! :) I'm Keye Yu. <br></br>
-                  <br></br>As a first-year Master's student in Human-Centered Design & Engineering with a background in Psychology , I am a user researcher with three years of HCI experience and publications at premier conferences (CHI, CSCW). I am skilled in leading end-to-end mixed-methods research, from discovery interviews to A/B testing , and have a proven ability to translate complex data into actionable design solutions.
+                  <br></br>As a first-year Master's student in Human-Centered Design & Engineering with a background in Psychology , I am a <br></br>
+                  user researcher with three years of HCI experience and publications at premier conferences (CHI, CSCW). I am skilled in <br></br>
+                  leading end-to-end mixed-methods research, from discovery interviews to A/B testing , and have a proven ability to <br></br>
+                  translate complex data into actionable design solutions.
                 </p>
                 <div className="intro_btn-action pb-5">
                   <a href="https://drive.google.com/file/d/1ikEWUn1vqcap1p9cKZoQ_hIVRhOTsE0d/view?usp=sharing">

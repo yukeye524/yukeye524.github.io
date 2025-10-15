@@ -15,7 +15,7 @@ export const Portfolio = () => {
 
   return (
     <HelmetProvider>
-      <Container className="About-header">
+      <Container className="About-header" style={{maxWidth: '1100px'}}>
         <Helmet>
           <meta charSet="utf-8" />
           <title> Research | {meta.title} </title>{" "}
@@ -27,7 +27,7 @@ export const Portfolio = () => {
           </Col>
         </Row>
         <div className="">
-          {dataportfolio.map((data, i) => {
+                  {dataportfolio.map((data, i) => {
             return (
               <div key={i} className="researchBox">
                 <div>

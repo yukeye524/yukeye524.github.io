@@ -5,9 +5,18 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { meta } from "../../../content_option";
 import features from "../../../assets/project/features.png"
 
-import React from "react";
+import React, { useState } from "react";
 
 export const InterviewAssistant = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openImageModal = (imageSrc, imageAlt) => {
+    setSelectedImage({ src: imageSrc, alt: imageAlt });
+  };
+
+  const closeImageModal = () => {
+    setSelectedImage(null);
+  };
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -24,16 +33,21 @@ export const InterviewAssistant = () => {
         </Row>
         <div className="project-content">
           <div className="project-section">
-            <div className="image-text-section">
-              <div className="image-container">
+            <div className="project-overview-section">
+              <Row className="mb-5">
+                <Col lg="12">
+                  <h3>Project Overview</h3>
+                </Col>
+              </Row>
+              <div className="overview-image-container">
                 <img
                   src="https://framerusercontent.com/images/T87GD8rs2xXFGF42Us4znYAtj0.png?width=1772&height=1034"
                   alt="Investa App Interface"
-                  className="img-fluid rounded project-image"
+                  className="img-fluid rounded project-image clickable-image"
+                  onClick={() => openImageModal("https://framerusercontent.com/images/T87GD8rs2xXFGF42Us4znYAtj0.png?width=1772&height=1034", "Investa App Interface")}
                 />
               </div>
-              <div className="text-container">
-                <h3>Project Overview</h3>
+              <div className="overview-text-container">
                 <p>I designed a gamified, emotionally intelligent fintech app for beginner investors — balancing AI-powered tutoring, social features, and bite-sized learning to reduce fear and build financial confidence.
                 </p>
               </div>
@@ -51,7 +65,8 @@ export const InterviewAssistant = () => {
                 <img
                   src="https://framerusercontent.com/images/mtqpYtb61OQlJtZJ37tlcZuk7g.png?width=1636&height=1232"
                   alt="AI Tutor Feature"
-                  className="img-fluid rounded project-image"
+                  className="img-fluid rounded project-image clickable-image"
+                  onClick={() => openImageModal("https://framerusercontent.com/images/mtqpYtb61OQlJtZJ37tlcZuk7g.png?width=1636&height=1232", "AI Tutor Feature")}
                 />
               </div>
               <div className="text-container">
@@ -67,7 +82,8 @@ export const InterviewAssistant = () => {
                 <img
                   src="https://framerusercontent.com/images/NSKwDS2neEmXdHSArXRTWLNoiI.png?width=1276&height=612"
                   alt="Gamified Learning"
-                  className="img-fluid rounded project-image"
+                  className="img-fluid rounded project-image clickable-image"
+                  onClick={() => openImageModal("https://framerusercontent.com/images/NSKwDS2neEmXdHSArXRTWLNoiI.png?width=1276&height=612", "Gamified Learning")}
                 />
               </div>
               <div className="text-container">
@@ -84,7 +100,8 @@ export const InterviewAssistant = () => {
                 <img
                   src="https://framerusercontent.com/images/AgMa2voOkFh01kYx6H3Ci0lTbAc.png?width=1102&height=614"
                   alt="Community Feature"
-                  className="img-fluid rounded project-image"
+                  className="img-fluid rounded project-image clickable-image"
+                  onClick={() => openImageModal("https://framerusercontent.com/images/AgMa2voOkFh01kYx6H3Ci0lTbAc.png?width=1102&height=614", "Community Feature")}
                 />
               </div>
               <div className="text-container">
@@ -105,7 +122,8 @@ export const InterviewAssistant = () => {
                 <img
                   src="https://framerusercontent.com/images/Fv6WbjjUzynw2L76eEGGYGP9QRU.png?scale-down-to=2048&width=2532&height=846"
                   alt="Lean UX Canvas"
-                  className="img-fluid rounded project-image"
+                  className="img-fluid rounded project-image clickable-image"
+                  onClick={() => openImageModal("https://framerusercontent.com/images/Fv6WbjjUzynw2L76eEGGYGP9QRU.png?scale-down-to=2048&width=2532&height=846", "Lean UX Canvas")}
                 />
               </div>
               <div className="text-container">
@@ -122,7 +140,8 @@ export const InterviewAssistant = () => {
                 <img
                   src="https://framerusercontent.com/images/Z9lBJnJNLNJuykMXeilwHb4ieM.png?width=1536&height=1024"
                   alt="User Research Interview"
-                  className="img-fluid rounded project-image"
+                  className="img-fluid rounded project-image clickable-image"
+                  onClick={() => openImageModal("https://framerusercontent.com/images/Z9lBJnJNLNJuykMXeilwHb4ieM.png?width=1536&height=1024", "User Research Interview")}
                 />
               </div>
               <div className="text-container">
@@ -138,7 +157,8 @@ export const InterviewAssistant = () => {
                 <img
                   src="https://framerusercontent.com/images/PYZZVuDY6n4XmMx0m1T354YYke4.png?width=1058&height=896"
                   alt="User Insights"
-                  className="img-fluid rounded project-image"
+                  className="img-fluid rounded project-image clickable-image"
+                  onClick={() => openImageModal("https://framerusercontent.com/images/PYZZVuDY6n4XmMx0m1T354YYke4.png?width=1058&height=896", "User Insights")}
                 />
               </div>
               <div className="text-container">
@@ -154,7 +174,8 @@ export const InterviewAssistant = () => {
                 <img
                   src="https://framerusercontent.com/images/JdlmUZpZOjJYL7W8An6ZgHAYgk.png?width=1898&height=946"
                   alt="Competitor Analysis"
-                  className="img-fluid rounded project-image"
+                  className="img-fluid rounded project-image clickable-image"
+                  onClick={() => openImageModal("https://framerusercontent.com/images/JdlmUZpZOjJYL7W8An6ZgHAYgk.png?width=1898&height=946", "Competitor Analysis")}
                 />
               </div>
               <div className="text-container">
@@ -170,7 +191,8 @@ export const InterviewAssistant = () => {
                 <img
                   src="https://framerusercontent.com/images/NqkRDt8Cx7WAyyjWBHWBkKUGYo.png?width=1262&height=1484"
                   alt="UX Audit"
-                  className="img-fluid rounded project-image"
+                  className="img-fluid rounded project-image clickable-image"
+                  onClick={() => openImageModal("https://framerusercontent.com/images/NqkRDt8Cx7WAyyjWBHWBkKUGYo.png?width=1262&height=1484", "UX Audit")}
                 />
               </div>
               <div className="text-container">
@@ -186,7 +208,8 @@ export const InterviewAssistant = () => {
                 <img
                   src="https://framerusercontent.com/images/Uon34DhUxDXX4VJhvXeYALZtR4s.png?width=1430&height=1204"
                   alt="System Design"
-                  className="img-fluid rounded project-image"
+                  className="img-fluid rounded project-image clickable-image"
+                  onClick={() => openImageModal("https://framerusercontent.com/images/Uon34DhUxDXX4VJhvXeYALZtR4s.png?width=1430&height=1204", "System Design")}
                 />
               </div>
               <div className="text-container">
@@ -202,7 +225,8 @@ export const InterviewAssistant = () => {
                 <img
                   src="https://framerusercontent.com/images/kBFNiSa8NbJdYbbBekBLobwMIE.png?width=1302&height=1004"
                   alt="Visual Design"
-                  className="img-fluid rounded project-image"
+                  className="img-fluid rounded project-image clickable-image"
+                  onClick={() => openImageModal("https://framerusercontent.com/images/kBFNiSa8NbJdYbbBekBLobwMIE.png?width=1302&height=1004", "Visual Design")}
                 />
               </div>
               <div className="text-container">
@@ -215,6 +239,25 @@ export const InterviewAssistant = () => {
 
         </div>
       </Container>
+
+      {/* 图片模态框 */}
+      {selectedImage && (
+        <div className="image-modal-overlay" onClick={closeImageModal}>
+          <div className="image-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="image-modal-close" onClick={closeImageModal}>
+              ×
+            </button>
+            <img
+              src={selectedImage.src}
+              alt={selectedImage.alt}
+              className="image-modal-img"
+            />
+            <div className="image-modal-caption">
+              {selectedImage.alt}
+            </div>
+          </div>
+        </div>
+      )}
     </HelmetProvider>
   );
 };
