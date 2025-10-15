@@ -30,20 +30,20 @@ export const About = () => {
           </Col>
         </Row>
         <Row className="sec_sp">
-          <Col lg="5">
+          <Col lg="4">
             <h3 className="color_sec py-4">{dataabout.title}</h3>
           </Col>
-          <Col lg="7" className="d-flex align-items-center">
+          <Col lg="8" className="d-flex align-items-center">
             <div>
               <p>{dataabout.aboutme}</p>
             </div>
           </Col>
         </Row>
         <Row className=" sec_sp">
-          <Col lg="5">
+          <Col lg="4">
             <h3 className="color_sec py-4">Education</h3>
           </Col>
-          <Col lg="7">
+          <Col lg="8">
             <table className="table caption-top">
               <tbody>
                 {worktimeline.map((data, i) => {
@@ -60,10 +60,10 @@ export const About = () => {
           </Col>
         </Row>
         <Row className="sec_sp">
-          <Col lg="5">
+          <Col lg="4">
             <h3 className="color_sec py-4">Research Experience</h3>
           </Col>
-          <Col lg="7">
+          <Col lg="8">
             {researchexperience.map((data, i) => {
               return (
                 <div className="service_ py-4" key={i}>
@@ -76,10 +76,10 @@ export const About = () => {
           </Col>
         </Row>
         <Row className="sec_sp">
-          <Col lg="5">
+          <Col lg="4">
             <h3 className="color_sec py-4">Work Experience</h3>
           </Col>
-          <Col lg="7">
+          <Col lg="8">
             {workexperience.map((data, i) => {
               return (
                 <div className="service_ py-4" key={i}>

@@ -1,15 +1,81 @@
 .project-content {
-  padding: 2rem 0;
+  padding: 3rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .project-image {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
 }
 
 .project-image:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* 项目段落布局 */
+.project-section {
+  margin-bottom: 4rem;
+  padding: 2rem 0;
+}
+
+.project-section:last-child {
+  margin-bottom: 2rem;
+}
+
+/* 文本内容布局 */
+.content-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* 图文混排样式 */
+.image-text-section {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  min-height: 400px;
+}
+
+.image-text-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.image-container {
+  flex: 0 0 45%;
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  flex: 1;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 全宽图片样式 */
+.full-width-image {
+  width: 100%;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.full-width-image img {
+  max-width: 100%;
+  height: auto;
 }
 
 .feature-list {
@@ -44,23 +110,99 @@
 h1.display-4 {
   color: var(--text-color);
   font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
 }
 
 h3 {
   color: var(--text-color);
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   font-weight: 600;
+  font-size: 1.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-color);
+  display: inline-block;
+}
+
+h4 {
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+h5 {
+  color: var(--secondary-color);
+  font-weight: 500;
+  margin-bottom: 2rem;
+  font-style: italic;
 }
 
 p {
   color: var(--text-color-2);
   line-height: 1.8;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+}
+
+/* 强调文本样式 */
+.highlight-text {
+  background: linear-gradient(120deg, var(--primary-color) 0%, var(--primary-color) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  padding: 0 0.1em;
 }
 
 @media (max-width: 768px) {
   .project-content {
+    padding: 1.5rem 0;
+  }
+
+  .project-section {
+    margin-bottom: 2.5rem;
     padding: 1rem 0;
+  }
+
+  .image-text-section {
+    flex-direction: column;
+    gap: 2rem;
+    min-height: auto;
+    align-items: center;
+  }
+
+  .image-text-section.reverse {
+    flex-direction: column;
+  }
+
+  .image-container {
+    flex: none;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .text-container {
+    padding: 0;
+    text-align: left;
+  }
+
+  h1.display-4 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .project-image {
+    max-height: 300px;
   }
 
   .project-links {
@@ -70,5 +212,23 @@ p {
   .project-links .btn {
     width: 100%;
     margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-content {
+    padding: 1rem 0;
+  }
+
+  .project-section {
+    margin-bottom: 2rem;
+  }
+
+  h1.display-4 {
+    font-size: 1.8rem;
+  }
+
+  .project-image {
+    max-height: 250px;
   }
 }

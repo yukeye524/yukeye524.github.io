@@ -22,136 +22,143 @@ export const DCDARTraining = () => {
           </Col>
         </Row>
         <div className="project-content">
-          <Row className="mb-5">
-            <Col lg="6">
-              <img
-                src="https://framerusercontent.com/images/uwXqfI2rLhnB8FXU9x7j1nCdSw.png?scale-down-to=4096&width=4324&height=6072"
-                alt="AR Training Interface"
-                className="img-fluid rounded project-image"
-              />
-            </Col>
-            <Col lg="6">
-              <h3>Project Overview</h3>
-              <p>
-                As the branding and visual designer for Diaper Stork, I led the creation of the full brand identity from concept through implementation. My work involved building the visual system (logo, color, typography), enforcing WCAG accessibility standards, and driving the adoption of a modular design system across all touchpoints. This effort was validated by early user testing, which showed a 92% approval rate for the new brand direction.
-              </p>
-            </Col>
-          </Row>
+          <div className="project-section">
+            <div className="image-text-section">
+              <div className="image-container">
+                <img
+                  src="https://framerusercontent.com/images/uwXqfI2rLhnB8FXU9x7j1nCdSw.png?scale-down-to=4096&width=4324&height=6072"
+                  alt="Brand Identity Design"
+                  className="img-fluid rounded project-image"
+                />
+              </div>
+              <div className="text-container">
+                <h3>Project Overview</h3>
+                <p>
+                  As the branding and visual designer for Diaper Stork, I led the creation of the full brand identity from concept through implementation. My work involved building the visual system (logo, color, typography), enforcing WCAG accessibility standards, and driving the adoption of a modular design system across all touchpoints. This effort was validated by early user testing, which showed a <span className="highlight-text">92% approval rate</span> for the new brand direction.
+                </p>
+              </div>
+            </div>
+          </div>
 
-          <Row className="mb-5">
-            <Col lg="12">
-              <h3>Design Process</h3>
-              <Row>
-                <Col lg="6">
-                  <img
-                    src="https://framerusercontent.com/images/oYoMFOnArOgSn0plDx3PIalfU.png?width=1600&height=1333"
-                    alt="Motion tracking in AR"
-                    className="img-fluid rounded project-image mb-3"
-                  />
-                </Col>
-                <Col lg="6">
-                  <h4>Market Research</h4>
-                  <p>We started by mapping the competitive landscape and listening deeply to target users. Through competitor matrices and JTBD / empathy mapping, we discovered that users prioritize emotional reassurance and brand trust over feature lists. That insight anchored our direction: the visual identity must feel as comforting as it is credible.</p>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
+          <div className="project-section">
+            <Row className="mb-5">
+              <Col lg="12">
+                <h3>Design Process</h3>
+              </Col>
+            </Row>
+            <div className="image-text-section reverse">
+              <div className="image-container">
+                <img
+                  src="https://framerusercontent.com/images/oYoMFOnArOgSn0plDx3PIalfU.png?width=1600&height=1333"
+                  alt="Market Research"
+                  className="img-fluid rounded project-image"
+                />
+              </div>
+              <div className="text-container">
+                <h4>Market Research</h4>
+                <p>We started by mapping the competitive landscape and listening deeply to target users. Through competitor matrices and JTBD / empathy mapping, we discovered that users prioritize emotional reassurance and brand trust over feature lists. That insight anchored our direction: the visual identity must feel as comforting as it is credible.</p>
+              </div>
+            </div>
+          </div>
 
-          <Row className="mb-5">
-            <Col lg="6">
-              <h4>Emotive Palette</h4>
-              <p>My role was to distill the emotional tone of the brand into visuals. I curated moodboards around warmth, softness, and inclusivity, then led alignment sessions to converge on one unified visual mood: gentle gradients, rounded line work, clean structure. That emotional anchor guided all downstream design decisions.
-              </p>
-            </Col>
-            <Col lg="6">
-              <img
-                src="https://framerusercontent.com/images/Fe5ZGdmGeklD91w8fL8Ni6xqns.png?scale-down-to=2048&width=2332&height=754"
-                alt="Real-time motion detection"
-                className="img-fluid rounded project-image"
-              />
-            </Col>
-          </Row>
+          <div className="project-section">
+            <div className="image-text-section">
+              <div className="image-container">
+                <img
+                  src="https://framerusercontent.com/images/Fe5ZGdmGeklD91w8fL8Ni6xqns.png?scale-down-to=2048&width=2332&height=754"
+                  alt="Emotive Palette"
+                  className="img-fluid rounded project-image"
+                />
+              </div>
+              <div className="text-container">
+                <h4>Emotive Palette</h4>
+                <p>My role was to distill the emotional tone of the brand into visuals. I curated moodboards around warmth, softness, and inclusivity, then led alignment sessions to converge on one unified visual mood: gentle gradients, rounded line work, clean structure. That emotional anchor guided all downstream design decisions.
+                </p>
+              </div>
+            </div>
+          </div>
 
-          <Row>
-            <Col lg="6">
-               <img
-                src="https://framerusercontent.com/images/oYoMFOnArOgSn0plDx3PIalfU.png?width=1600&height=1333"
-                alt="Motion tracking in AR"
-                className="img-fluid rounded project-image mb-3"
-              />
-            </Col>
-              <Col lg="6">
+          <div className="project-section">
+            <div className="image-text-section reverse">
+              <div className="image-container">
+                <img
+                  src="https://framerusercontent.com/images/oYoMFOnArOgSn0plDx3PIalfU.png?width=1600&height=1333"
+                  alt="Logo Sketching Process"
+                  className="img-fluid rounded project-image"
+                />
+              </div>
+              <div className="text-container">
                 <h4>Brainstorming & Logo Sketching</h4>
                 <p>From core brand words (like stork, connection, growth), I sketched dozens of logo ideas. We filtered with criteria—scalability, recognition, emotional fit—and evolved toward a balanced symbol: part wing / part abstract mark. This symbol felt meaningful without being overly literal.</p>
-              </Col>
-          </Row>
+              </div>
+            </div>
+          </div>
 
-          <Row className="mb-5">
-            <Col lg="12">
-              <h4>Logo & Graphic Asset Creation</h4>
-              <Row>
-                <Col lg="8">
-                  <p>I refined the mark into multiple versions (full logo, icon, single-color) and created complementary graphic assets. The negative space, stroke weight, and spacing were tuned so the logo felt intentional and “breathe-able.” The supporting graphics drew from wing-inspired motifs, giving visual extension.
-                  </p>
-                </Col>
-                <Col lg="4">
-                  <img
-                    src="https://framerusercontent.com/images/fojag5IXTWnkBzHAt7aKicSGIoo.png?width=1778&height=1526"
-                    alt="Research findings"
-                    className="img-fluid rounded project-image"
-                  />
-                </Col>
-              </Row>
-            </Col>
-          </Row>
+          <div className="project-section">
+            <div className="image-text-section">
+              <div className="image-container">
+                <img
+                  src="https://framerusercontent.com/images/fojag5IXTWnkBzHAt7aKicSGIoo.png?width=1778&height=1526"
+                  alt="Logo Creation Process"
+                  className="img-fluid rounded project-image"
+                />
+              </div>
+              <div className="text-container">
+                <h4>Logo & Graphic Asset Creation</h4>
+                <p>I refined the mark into multiple versions (full logo, icon, single-color) and created complementary graphic assets. The negative space, stroke weight, and spacing were tuned so the logo felt intentional and "breathe-able." The supporting graphics drew from wing-inspired motifs, giving visual extension.
+                </p>
+              </div>
+            </div>
+          </div>
 
-          <Row>
-            <Col lg="6">
-               <img
-                src="https://framerusercontent.com/images/oYoMFOnArOgSn0plDx3PIalfU.png?width=1600&height=1333"
-                alt="Motion tracking in AR"
-                className="img-fluid rounded project-image mb-3"
-              />
-            </Col>
-              <Col lg="6">
+          <div className="project-section">
+            <div className="image-text-section reverse">
+              <div className="image-container">
+                <img
+                  src="https://framerusercontent.com/images/oYoMFOnArOgSn0plDx3PIalfU.png?width=1600&height=1333"
+                  alt="Typography System"
+                  className="img-fluid rounded project-image"
+                />
+              </div>
+              <div className="text-container">
                 <h4>Typography System</h4>
                 <p>I selected a primary and secondary typeface that balance softness and legibility. Then I defined hierarchy rules—heading, body, caption—with spacing, alignment, and contrast in mind. The goal is to create a reading experience that feels calm yet clear, never crowded.</p>
-              </Col>
-          </Row>
+              </div>
+            </div>
+          </div>
 
-          <Row className="mb-5">
-            <Col lg="12">
-              <h4>Color Narrative</h4>
-              <Row>
-                <Col lg="8">
-                  <p>From mood to usability, I distilled a palette with primary, accent, and neutral colors, then generated accessible variants. Using WCAG contrast checks, I refined until each combination remained readable in real-world conditions. The color system became a functional emotional scaffold.
-                  </p>
-                </Col>
-                <Col lg="4">
-                  <img
-                    src="https://framerusercontent.com/images/qW9CbMSgIgAEDez8eYBlHpaBFM.png?width=1940&height=1150"
-                    alt="Research findings"
-                    className="img-fluid rounded project-image"
-                  />
-                </Col>
-              </Row>
-            </Col>
-          </Row>
+          <div className="project-section">
+            <div className="image-text-section">
+              <div className="image-container">
+                <img
+                  src="https://framerusercontent.com/images/qW9CbMSgIgAEDez8eYBlHpaBFM.png?width=1940&height=1150"
+                  alt="Color System"
+                  className="img-fluid rounded project-image"
+                />
+              </div>
+              <div className="text-container">
+                <h4>Color Narrative</h4>
+                <p>From mood to usability, I distilled a palette with primary, accent, and neutral colors, then generated accessible variants. Using <span className="highlight-text">WCAG contrast checks</span>, I refined until each combination remained readable in real-world conditions. The color system became a functional emotional scaffold.
+                </p>
+              </div>
+            </div>
+          </div>
 
-          <Row>
-            <Col lg="6">
-               <img
-                src="https://framerusercontent.com/images/CTOOKsvddsnuRk4RbJg3JuWXUPA.png?width=1226&height=1498"
-                alt="Motion tracking in AR"
-                className="img-fluid rounded project-image mb-3"
-              />
-            </Col>
-              <Col lg="6">
+          <div className="project-section">
+            <div className="image-text-section reverse">
+              <div className="image-container">
+                <img
+                  src="https://framerusercontent.com/images/CTOOKsvddsnuRk4RbJg3JuWXUPA.png?width=1226&height=1498"
+                  alt="Brand Applications"
+                  className="img-fluid rounded project-image"
+                />
+              </div>
+              <div className="text-container">
                 <h4>Brand In Wild</h4>
                 <p>I expanded the visual identity onto social, packaging, banners, and physical touchpoints. I created templates and mockups to test brand consistency across digital and print. The result: a cohesive presence that reads as one brand, whether on screen or in-hand.</p>
-              </Col>
-          </Row>
-          
+              </div>
+            </div>
+          </div>
 
         </div>
       </Container>
