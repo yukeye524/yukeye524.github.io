@@ -17,7 +17,7 @@ export const Home = () => {
       <section id="home" className="home">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Yuzhuo Jia</title>
+          <title>Keye Yu</title>
           <meta name="description" content={meta.description} />
         </Helmet>
         <div className="intro_sec d-block d-lg-flex align-items-center ">
@@ -28,8 +28,8 @@ export const Home = () => {
                 <img className="profile-image" alt="" src={shlImage} />
                 <h2 className="mb-1x">{introdata.title}</h2>
                 <p>
-                  <a href="mailto:yjia8942@uni.sydney.edu.au">
-                    yjia8942@uni.sydney.edu.au
+                  <a href="mailto:keyeyu25@uw.edu">
+                    keyeyu25@uw.edu
                   </a>
                 </p>
 
@@ -54,14 +54,11 @@ export const Home = () => {
                 <br />
                 <p className="mb-1x">
                   {" "}
-                  Hello! :) I'm Yuzhuo Jia. <br></br>
-                  <br></br>A Computer Science Master's graduate from the
-                  University of Sydney, and I am currently a Research Assistant
-                  at Tsinghua University working on projects related to AI
-                  Agents.
+                  Hello! :) I'm Keye Yu. <br></br>
+                  <br></br>As a first-year Master's student in Human-Centered Design & Engineering with a background in Psychology , I am a user researcher with three years of HCI experience and publications at premier conferences (CHI, CSCW). I am skilled in leading end-to-end mixed-methods research, from discovery interviews to A/B testing , and have a proven ability to translate complex data into actionable design solutions.
                 </p>
                 <div className="intro_btn-action pb-5">
-                  <a href="https://drive.google.com/file/d/1MmzkCLNbxnSfFmiBp79fby5Vf9Paly45/view?usp=drive_link">
+                  <a href="https://drive.google.com/file/d/1ikEWUn1vqcap1p9cKZoQ_hIVRhOTsE0d/view?usp=sharing">
                     <div id="button_h" className="ac_btn btn">
                       Resume
                       <div className="ring one"></div>

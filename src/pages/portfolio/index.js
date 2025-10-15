@@ -5,13 +5,13 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { dataportfolio, meta } from "../../content_option";
 
 import React from "react";
-import BiFocalNet from "../../assets/research/BiFocalNet.png";
 import bibm1 from "../../assets/research/bibm1.png";
 import yolo5 from "../../assets/research/yolo5.png";
 import newResearch from "../../assets/research/new_research.jpg"; // 替换为您的新图片文件名
+import cognitive from "../../assets/research/cognitive.png";
 
 export const Portfolio = () => {
-  var imglist = [BiFocalNet, bibm1, yolo5, newResearch];
+  var imglist = [newResearch, cognitive, bibm1, yolo5];
 
   return (
     <HelmetProvider>

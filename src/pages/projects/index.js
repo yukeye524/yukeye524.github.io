@@ -7,7 +7,7 @@ import { meta, projectportfolio } from "../../content_option";
 
 
 import React from "react";
-import paper from "../../assets/project/paper.gif";
+import paper from "../../assets/project/paper.png";
 import interview from "../../assets/project/interview.png";
 import dcd from "../../assets/project/dcd.png";
 

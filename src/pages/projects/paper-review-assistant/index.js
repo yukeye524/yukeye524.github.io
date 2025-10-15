@@ -3,6 +3,7 @@ import "./style.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { meta } from "../../../content_option";
+import Picture1 from "../../../assets/images/Picture1.png"
 
 import React from "react";
 
@@ -12,19 +13,20 @@ export const PaperReviewAssistant = () => {
       <Container className="About-header">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Paper Review Assistant | {meta.title}</title>
+          <title>Face-to-Face Plus | {meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="12">
-            <h1 className="display-4 mb-4">Paper Review Assistant</h1>
+            <h1 className="display-4 mb-4">Face-to-Face Plus</h1>
+            <h5>Product Manager Intern, Aixuexi Tech, Apr. 2025-Aug. 2025</h5>
           </Col>
         </Row>
         <div className="project-content">
           <Row className="mb-5">
             <Col lg="6">
               <img
-                src="https://picsum.photos/600/400?random=1"
+                src="https://framerusercontent.com/images/jvcDfNmpIeWsRfZVod5Sa8YOIOc.png?scale-down-to=2048&width=2926&height=1367"
                 alt="Paper Review Assistant Screenshot"
                 className="img-fluid rounded project-image"
               />
@@ -32,34 +34,25 @@ export const PaperReviewAssistant = () => {
             <Col lg="6">
               <h3>Project Overview</h3>
               <p>
-                Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa
-                aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa.
-              </p>
-              <p>
-                Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa
-                aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa.
+                Face-to-Face Plus was reviving in-person teaching after COVID, but teacher quality varied greatly — especially among novices. I led the discovery and definition phase for the “lesson preparation” module, identifying that the real gap wasn’t a lack of content but a lack of guided rehearsal and feedback. My work reframed the product direction from “content delivery” to “closing the preparation–performance gap” through standardized workflows and scalable feedback loops.
               </p>
             </Col>
           </Row>
 
           <Row className="mb-5">
             <Col lg="12">
-              <h3>Key Features</h3>
+              <h3>Design Process</h3>
               <Row>
                 <Col lg="6">
                   <img
-                    src="https://picsum.photos/500/300?random=2"
+                    src="https://framerusercontent.com/images/dx16ZAvCzcHEmWx57EgXXifCiE.png?width=1286&height=1174"
                     alt="Feature demonstration"
                     className="img-fluid rounded project-image mb-3"
                   />
                 </Col>
                 <Col lg="6">
-                  <ul className="feature-list">
-                    <li>Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa</li>
-                    <li>Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa</li>
-                    <li>Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa</li>
-                    <li>Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa</li>
-                  </ul>
+                  <h4>Stakeholder Mapping</h4>
+                  <p>I joined with a vague mandate—“work on lesson preparation for Face‑to‑Face Plus.” Instead of waiting for clarity, I made my own. I scheduled 1:1s across product lines to map how content, pedagogy, ops, and engineering really worked together. Those chats cracked open the market reality: post‑COVID, in‑person learning is back, but veteran teachers exited, and quality is uneven. If tech can standardize prep and lighten teacher load, we could lift outcomes at scale.This wasn’t small talk; it was my shortcut to institutional memory, decision makers, and the constraints I’d eventually have to design around.</p>
                 </Col>
               </Row>
             </Col>
@@ -67,19 +60,96 @@ export const PaperReviewAssistant = () => {
 
           <Row className="mb-5">
             <Col lg="6">
-              <h3>Technical Implementation</h3>
+              <h4>User Interview</h4>
               <p>
-                Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa
-                aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa.
-              </p>
-              <p>
-                Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa
-                aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa.
+                Based on interviews with 17 teachers, I identified that novices lack feedback, creating blind spots, while teaching effectiveness varies greatly. Two practices proved universally helpful: observing expert lessons and personal rehearsal. The current system's fragmented UX hinders preparation, leading me to reframe our problem from "providing more content" to "guiding practice, simulating lessons, and closing the feedback loop."
               </p>
             </Col>
             <Col lg="6">
               <img
-                src="https://picsum.photos/500/350?random=3"
+                src="https://framerusercontent.com/images/RWJg3ojviyTBLTx62TS7cpjjw.png?scale-down-to=2048&width=2392&height=1412"
+                alt="Technical architecture"
+                className="img-fluid rounded project-image"
+              />
+            </Col>
+          </Row>
+          
+          <Row className="mb-5">
+            <Col lg="6">
+              <h4>Contextual Observation</h4>
+              <p>I shadowed real classes and joined teacher rehearsals. In great lessons, timing, questioning, and concept builds were crisp; in weaker ones, the same concepts dragged or derailed. 串讲 was gold—peer critique refined pacing and explanations—but there was no system to capture, standardize, or scale that learning. That’s when “simulate + feedback” became a must‑have, not a nice‑to‑have.</p>
+              <img
+                src="https://framerusercontent.com/images/1ag1PpyHjSbr3yJidHMUgvbAD9w.png?width=1716&height=1480"
+                alt="Technical architecture"
+                className="img-fluid rounded project-image"
+              />
+            </Col>
+          </Row>
+
+          <Row className="mb-5">
+            <Col lg="6">
+              <h4>Pain Point & HMW Analysis</h4>
+              <p>Based on the insights I gained from interview and Observation, I used "How might we questions" to focus the team:</p>
+              <p>- HMW help teachers rehearse and get feedback before class?</p>
+              <p>- HMW standardize “what good looks like” without killing autonomy?</p>
+              <p>- HMW connect materials ↔ personalization ↔ delivery ↔ review into one loop?</p>
+              <img
+                src="https://framerusercontent.com/images/cghCsIf59uSSIgfS2QWJnK1o3Cs.png?scale-down-to=2048&width=2288&height=1748"
+                alt="Technical architecture"
+                className="img-fluid rounded project-image"
+              />
+            </Col>
+          </Row>
+
+          <Row className="mb-5">
+            <Col lg="6">
+              <h4>Concept Architecture</h4>
+              <p>I proposed a three-part concept to directly address the drivers of teaching variance:</p>
+              <p>- Dynamic Whiteboard: Use guided animations to simplify complex explanations and reduce teachers' cognitive load.</p>
+              <p>- Rehearsal Studio: Allow teachers to practice, record, and receive pre-class feedback.</p>
+              <p>- Data Feedback Loop: Capture teaching signals like pacing and timing to shift improvement from content-based to behavior-based.</p>
+              <img
+                src="https://framerusercontent.com/images/prmoBhYzc9TpTicGH3juNnPvFKw.png?width=1734&height=784"
+                alt="Technical architecture"
+                className="img-fluid rounded project-image"
+              />
+            </Col>
+          </Row>
+          <Row className="mb-5">
+            <Col lg="6">
+              <h4>Journey Definition</h4>
+              <p>I framed the ideal teacher journey as Goal → Method → Evidence, creating a shared vision for scoping and identifying key product interventions at each stage:</p>
+              <p>- Prep: Link courseware with personalization and establish clear goals upfront.</p>
+              <p>- Rehearse: Simulate lesson delivery to capture performance data, like timing and question patterns, for feedback.</p>
+              <p>- Teach: (Later phase) Visualize live pacing to guide in-class delivery.</p>
+              <p>- Review: Summarize behavioral signals and provide recommendations for the next preparation cycle.</p>
+              <img
+                src="https://framerusercontent.com/images/4KwpBXdRV0Z43EGjVCIUkbW108.png?scale-down-to=2048&width=2290&height=1168"
+                alt="Technical architecture"
+                className="img-fluid rounded project-image"
+              />
+            </Col>
+          </Row>
+          <Row className="mb-5">
+            <Col lg="6">
+              <h4>Prioritization with RICE</h4>
+              <p>Using the RICE framework, I prioritized our initiatives into a sequenced roadmap designed for rapid learning:</p>
+              <p>- Now: Fix the fragmented prep workflow and launch a Dynamic Whiteboard MVP, targeting high reach and impact with lower effort.</p>
+              <p>- Next: Build the Simulation Studio, a medium-effort feature with high impact.</p>
+              <p>- Later: Implement live in-class pacing visualization to connect our roadmap from preparation to delivery.</p>
+              <img
+                src="https://framerusercontent.com/images/loZwn2WpfbF1xStoLL9LIr5pDT0.png?scale-down-to=2048&width=2614&height=1270"
+                alt="Technical architecture"
+                className="img-fluid rounded project-image"
+              />
+            </Col>
+          </Row>
+          <Row className="mb-5">
+            <Col lg="6">
+              <h4>Prioritization with RICE</h4>
+              <p>The launch of the "Dynamic Blackboard" feature was successfully implemented in over 6,000 live classes. This initiative directly addressed key teacher pain points discovered through user research. The impact was significant, resulting in a 25% reduction in lesson preparation time and a doubling of the satisfaction rate among new teachers.</p>
+              <img
+                src={Picture1}
                 alt="Technical architecture"
                 className="img-fluid rounded project-image"
               />
@@ -88,16 +158,14 @@ export const PaperReviewAssistant = () => {
 
           <Row className="mb-5">
             <Col lg="12">
-              <h3>Results and Impact</h3>
+              <h3>Takeaway & Memorable Moments</h3>
               <Row>
                 <Col lg="8">
-                  <p>
-                    Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa
-                    aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa.
+                  <p>In one observation, I saw two teachers teach the same topic with opposite results. Instead of jumping to “we need more content,” I stopped and asked myself: What’s the variable here? How can I prove it?
                   </p>
-                  <p>
-                    Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa
-                    aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa.
+                  <p>I traced it back, tested my assumption with more observations and interviews, and confirmed it wasn’t about the materials — it was about preparation habits and feedback loops.
+                  </p>
+                  <p>That moment reminded me why I thrive in product work: I don’t just accept the first explanation. I break it down, validate it, and only then commit to a direction — even if it means challenging the initial consensus.
                   </p>
                 </Col>
                 <Col lg="4">

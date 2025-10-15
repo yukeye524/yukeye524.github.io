@@ -25,13 +25,13 @@ const Headermain = () => {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
+                  <Link to="/about">About Me</Link>
+                </li>
+                <li>
                   <Link to="/portfolio">Research</Link>
                 </li>
                 <li>
-                  <Link to="/projects">Software Tools & Projects</Link>
-                </li>
-                <li>
-                  <Link to="/about">About Me</Link>
+                  <Link to="/projects">Work & Projects</Link>
                 </li>
               </ul>
             </nav>
