@@ -8,9 +8,10 @@
 }
 .researchBox .img_research{
     border-radius: 8px;
-    width: 250px;
-    height: 180px;
-    object-fit: cover;
+    width: 280px;
+    height: 200px;
+    object-fit: contain;
+    background-color: var(--bg-color);
     cursor: pointer;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
