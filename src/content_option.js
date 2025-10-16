@@ -293,4 +293,5 @@ export {
   projectportfolio,
   logotext,
   awards,
+  skills,
 };
