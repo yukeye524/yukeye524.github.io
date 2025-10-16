@@ -61,10 +61,10 @@ export const About = () => {
         </Row>
         <Row className="sec_sp">
           <Col lg="4">
-            <h3 className="color_sec py-4">Research Experience</h3>
+            <h3 className="color_sec py-4">Work Experience</h3>
           </Col>
           <Col lg="8">
-            {researchexperience.map((data, i) => {
+            {workexperience.map((data, i) => {
               return (
                 <div className="service_ py-4" key={i}>
                   <h5 className="service__title">{data.title}</h5>
@@ -77,10 +77,10 @@ export const About = () => {
         </Row>
         <Row className="sec_sp">
           <Col lg="4">
-            <h3 className="color_sec py-4">Work Experience</h3>
+            <h3 className="color_sec py-4">Research Experience</h3>
           </Col>
           <Col lg="8">
-            {workexperience.map((data, i) => {
+            {researchexperience.map((data, i) => {
               return (
                 <div className="service_ py-4" key={i}>
                   <h5 className="service__title">{data.title}</h5>
