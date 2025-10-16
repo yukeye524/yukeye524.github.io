@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.caf2b70d.css",
-    "main.js": "/static/js/main.0c28a38b.js",
+    "main.css": "/static/css/main.e851234c.css",
+    "main.js": "/static/js/main.174cd826.js",
     "static/media/new_research.jpg": "/static/media/new_research.77bc5d3b518c8f6c6fb3.jpg",
     "static/media/bibm1.png": "/static/media/bibm1.d12805ecee45012af117.png",
     "static/media/touxian.jpg": "/static/media/touxian.38a61732b605aca5627a.jpg",
@@ -16,11 +16,11 @@
     "static/media/icon.jpg": "/static/media/icon.53d1be3e640daaf13a1f.jpg",
     "index.html": "/index.html",
     "static/media/blob.svg": "/static/media/blob.16a350fbde67ed07a10c.svg",
-    "main.caf2b70d.css.map": "/static/css/main.caf2b70d.css.map",
-    "main.0c28a38b.js.map": "/static/js/main.0c28a38b.js.map"
+    "main.e851234c.css.map": "/static/css/main.e851234c.css.map",
+    "main.174cd826.js.map": "/static/js/main.174cd826.js.map"
   },
   "entrypoints": [
-    "static/css/main.caf2b70d.css",
-    "static/js/main.0c28a38b.js"
+    "static/css/main.e851234c.css",
+    "static/js/main.174cd826.js"
   ]
 }
