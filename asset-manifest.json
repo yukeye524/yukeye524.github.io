@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e851234c.css",
-    "main.js": "/static/js/main.174cd826.js",
+    "main.css": "/static/css/main.009cd866.css",
+    "main.js": "/static/js/main.005f2351.js",
     "static/media/new_research.jpg": "/static/media/new_research.77bc5d3b518c8f6c6fb3.jpg",
     "static/media/bibm1.png": "/static/media/bibm1.d12805ecee45012af117.png",
     "static/media/touxian.jpg": "/static/media/touxian.38a61732b605aca5627a.jpg",
@@ -12,15 +12,14 @@
     "static/media/interview.png": "/static/media/interview.9fc9fc842f73354f053d.png",
     "static/media/dcd.png": "/static/media/dcd.1dbc3d368a6bddf94215.png",
     "static/media/paper.png": "/static/media/paper.dd92563e681488f7ecfb.png",
-    "static/media/face.jpg": "/static/media/face.7f7ef7d6618e0c014a52.jpg",
     "static/media/icon.jpg": "/static/media/icon.53d1be3e640daaf13a1f.jpg",
     "index.html": "/index.html",
     "static/media/blob.svg": "/static/media/blob.16a350fbde67ed07a10c.svg",
-    "main.e851234c.css.map": "/static/css/main.e851234c.css.map",
-    "main.174cd826.js.map": "/static/js/main.174cd826.js.map"
+    "main.009cd866.css.map": "/static/css/main.009cd866.css.map",
+    "main.005f2351.js.map": "/static/js/main.005f2351.js.map"
   },
   "entrypoints": [
-    "static/css/main.e851234c.css",
-    "static/js/main.174cd826.js"
+    "static/css/main.009cd866.css",
+    "static/js/main.005f2351.js"
   ]
 }
